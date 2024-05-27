@@ -7,8 +7,12 @@ function updateTemp(response) {
   let windElement = document.querySelector("#Wind");
   let timeElement = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
+  let iconElement = document.querySelector("#icon");
 
-  console.log(response.data);
+  iconElement.innerHTML = `<img
+      src="${response.data.condition.icon_url}"
+      class="weather-app-icon"
+    />`;
   tempElement.innerHTML = Math.round(temperature);
   cityElement.innerHTML = response.data.city;
   descriptionElement.innerHTML = response.data.condition.description;
@@ -31,7 +35,7 @@ function formatDate(date) {
   ];
   let day = days[date.getDay()];
 
-  if (minutes < 10 ){
+  if (minutes < 10) {
     minutes = `0${minutes}`;
   }
   return `${day} ${hours}:${minutes}`;
