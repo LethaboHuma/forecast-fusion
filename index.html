@@ -10,41 +10,39 @@
     <title>Document</title>
   </head>
   <body>
-     <div class="weather-app">
-    <div>
-      <header>
-        <form>
-          <input type="search" placeholder="Enter a city..." required />
-          <input type="submit" value="search" />
-        </form>
-      </header>
-      <main>
-       
-          <h1>Paris</h1>
-          <p>
-            Tuesday 14:9, scattered clouds
+  <div class="weather-app">
+    <header>
+      <form class="search-form">
+        <input type="search" placeholder="Enter a city..." required class="search-form-input" />
+        <input type="submit" value="search" class="search-form-button" />
+      </form>
+    </header>
+    <main>
+      <div class="weather-app-data">
+        <div>
+          <h1 class="weather-app-city">Paris</h1>
+          <p class="weather-app-details">
+            Tuesday 14:09, scattered clouds
             <br />
-            Humidity: 66%, Wind: 3.13km/h
+            Humidity: <strong>66%</strong>, Wind: <strong>3.13km/h</strong>
           </p>
         </div>
-        <div>⛅️ 12°C</div>
-      </main>
-      <footer>
-        Built by
-        <a href="https://github.com/LethaboHuma" target="_blank">
-          Lethabo Huma</a
-        >,
-        <a
-          href="https://github.com/LethaboHuma/forecast-fusion.git"
-          target="_blank"
-        >
-          is open-sourced on GitHub</a
-        >
-        and
-        <a href="https://forecast-fusion-app.netlify.app" target="_blank">
-          hosted on Netlify</a
-        >
-      </footer>
-    </div>
+        <div class="weather-app-temp">
+          <div class="weather-app-icon">⛅️</div>
+          <div class="weather-app-temp-value">12</div>
+          <div class="weather-app-temp-unit">°C</div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      Built by
+      <a href="https://github.com/LethaboHuma" target="_blank">Lethabo Huma</a>,
+      <a href="https://github.com/LethaboHuma/forecast-fusion.git" target="_blank">is open-sourced on GitHub</a>
+      and
+      <a href="https://forecast-fusion-app.netlify.app" target="_blank">hosted on Netlify</a>
+    </footer>
+  </div>
+</body>
+
   </body>
 </html>
