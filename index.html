@@ -4,45 +4,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
-  <div class="weather-app">
-    <header>
-      <form class="search-form">
-        <input type="search" placeholder="Enter a city..." required class="search-form-input" />
-        <input type="submit" value="search" class="search-form-button" />
-      </form>
-    </header>
-    <main>
-      <div class="weather-app-data">
-        <div>
-          <h1 class="weather-app-city">Paris</h1>
-          <p class="weather-app-details">
-            Tuesday 14:09, scattered clouds
-            <br />
-            Humidity: <strong>66%</strong>, Wind: <strong>3.13km/h</strong>
-          </p>
+    <div class="weather-app">
+      <header>
+        <form class="search-form" id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-form-input"
+            id="search-form-input"
+          />
+          <input type="submit" value="search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city" id="city">Paris</h1>
+            <p class="weather-app-details">
+              Tuesday 14:09, scattered clouds
+              <br />
+              Humidity: <strong>66%</strong>, Wind: <strong>3.13km/h</strong>
+            </p>
+          </div>
+          <div class="weather-app-temp">
+            <div class="weather-app-icon">⛅️</div>
+            <div class="weather-app-temp-value">12</div>
+            <div class="weather-app-temp-unit">°C</div>
+          </div>
         </div>
-        <div class="weather-app-temp">
-          <div class="weather-app-icon">⛅️</div>
-          <div class="weather-app-temp-value">12</div>
-          <div class="weather-app-temp-unit">°C</div>
-        </div>
-      </div>
-    </main>
-    <footer>
-      Built by
-      <a href="https://github.com/LethaboHuma" target="_blank">Lethabo Huma</a>,
-      <a href="https://github.com/LethaboHuma/forecast-fusion.git" target="_blank">is open-sourced on GitHub</a>
-      and
-      <a href="https://forecast-fusion-app.netlify.app" target="_blank">hosted on Netlify</a>
-    </footer>
-  </div>
-</body>
-
+      </main>
+      <footer>
+        Built by
+        <a href="https://github.com/LethaboHuma" target="_blank">Lethabo Huma</a
+        >,
+        <a
+          href="https://github.com/LethaboHuma/forecast-fusion.git"
+          target="_blank"
+          >is open-sourced on GitHub</a
+        >
+        and
+        <a href="https://forecast-fusion-app.netlify.app" target="_blank"
+          >hosted on Netlify</a
+        >
+      </footer>
+    </div>
+    <script src="src/main.js"></script>
   </body>
 </html>
