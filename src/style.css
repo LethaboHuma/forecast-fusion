@@ -38,7 +38,7 @@ header {
 }
 
 main {
-  padding: 30px 0;
+  padding: 20px 0;
 }
 
 .weather-app-data {
@@ -81,6 +81,22 @@ main {
 .weather-app-details strong {
   color: #96b6c5;
   font-weight: 500;
+}
+
+.weather-forecast-temperatures {
+  font-size: 13px;
+}
+
+.weather-forecast-day {
+  margin-top: 20px;
+  color: black;
+}
+.weather-forecast-temp-min {
+  opacity: 0.5;
+}
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.6;
 }
 footer {
   border-top: 1px solid #f9f7fe;
